@@ -1,0 +1,2030 @@
+// ?ШАПКА -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    z-index: 49;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid gold;
+    box-sizing: border-box;
+
+    &__container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.6s;
+    }
+
+    &__logo {
+        margin-left: 0px;
+        margin-right: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__container-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 auto;
+    }
+
+    &__link {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        transition: 0.3s;
+        transition-property: border, padding;
+
+        &:hover {
+            color: #D1A954;
+            border: 1px solid rgba(209, 169, 84, 0.9);
+            padding: 7px 9px;
+        }
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__active {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #D1A954;
+        border: 1px solid rgba(209, 169, 84, 0.9);
+        padding: 7px 9px;
+    }
+
+    
+  
+
+    // menu-burger------------------
+
+    &__burger-menu {
+        display: none;
+    }
+
+    &__open-menu-buger {
+        display: none;
+    }
+
+    // menu-burger------------------
+
+
+}
+
+.header.header-scroll {
+    .header__container {
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+
+    .header__logo {
+        margin-left: 0px;
+        margin-right: 20px;
+
+        img {
+            max-width: 100%;
+            height: 30px;
+        }
+    }
+
+    &__gold {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #D1A954;
+    }
+}
+
+// ?ШАПКА -----------------------------------------------------------------------------------------------------------------------------------------------------
+// ?ШАПКА -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+// !-----------------------------------------------------------------------------------------------------------------
+// !main
+
+.slider {
+    padding: 0 20px;
+
+
+    &__container {
+        max-width: 1800px;
+        margin: 180px auto 0 auto;
+        overflow: hidden;
+        padding: 20px 10px 0px 10px;
+        background-color: white;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: 1800px;
+    }
+
+    &__column:not(:first-child) {}
+
+    &__column {
+        transition: 0.3s;
+    }
+
+    &__column:hover {
+        transform: scale(1.02);
+    }
+
+    .slider {
+
+        &__switch {
+            margin: 60px auto 120px auto;
+            display: table;
+        }
+    }
+
+    .switch {
+        position: relative;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-pagination {
+
+            .swiper-pagination-bullet-active {
+                background-color: black;
+            }
+
+            span {
+                height: 3px;
+                width: 20px;
+                background-color: #E5E5E5;
+                opacity: 1;
+            }
+        }
+
+        &__button-prev {
+            margin-right: 180px;
+            cursor: pointer;
+            font-size: 40px;
+
+            &:active {
+                color: rgb(218, 213, 213);
+            }
+        }
+
+        &__button-next {
+            cursor: pointer;
+            font-size: 40px;
+
+            &:active {
+                color: rgb(218, 213, 213);
+            }
+        }
+    }
+
+    .active {
+        background-color: black;
+    }
+
+    .item-slider {
+        position: relative;
+
+        & img {
+            max-width: 100%;
+        }
+
+        &__container-down-color {
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            width: 100%;
+            background: rgba(209, 169, 84, 0.9);
+            padding: 20px 15px;
+            box-sizing: border-box;
+
+        }
+
+        &__border {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        &__tittle {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 21px;
+        }
+
+        &__text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 135%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 20px;
+            margin-bottom: 22px;
+        }
+    }
+}
+
+
+
+
+
+.about-restaurant {
+
+    &__container-1 {
+        padding: 0 20px;
+        max-width: 1110px;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    &__tittle {
+        text-align: center;
+    }
+
+    &__heading_top {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 145%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__logo1 {
+        margin-top: 25px;
+    }
+
+    &__text_top {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+    &__container-video {
+        position: absolute;
+        width: 100%;
+        height: 479px;
+        top: 150px;
+        left: 0;
+        padding: 0px 0px;
+        box-sizing: border-box;
+    }
+
+    &__video {
+        border: solid;
+        margin: 0 auto;
+        border: 10px solid #FFFFFF;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 30px rgba(126, 126, 126, 0.25);
+        display: table;
+
+        video {
+            max-width: 100%;
+        }
+    }
+
+    &__color {
+        background-color: #E5E5E5;
+        padding-top: 400px;
+        margin-top: 290px;
+        padding-bottom: 90px;
+    }
+
+    &__container-2 {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    &__descr-1 {}
+
+    &__descr-2 {
+        margin-left: 140px;
+    }
+
+    &__row-1 {
+        display: flex;
+    }
+
+    &__square1 {
+        margin-right: 30px;
+    }
+
+    &__picture {
+        margin-right: 20px;
+    }
+
+    &__square2 {
+
+        .vertical {
+            vertical-align: 8px;
+        }
+
+        .vertical+.about-restaurant__text {
+            transform: translate(0, -9.5px);
+        }
+    }
+
+    &__row-2 {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    &__heading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 135%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: #616161;
+        margin-top: 30px;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+
+
+.gallery {
+
+    img {
+        max-width: 100%;
+    }
+
+    &__container {
+        padding: 120px 20px;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &__row-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tittle {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+
+    &__heading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 135%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__logo {
+        margin-top: 25px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+    &__photo-1 {
+        img {
+            transition: 0.3s;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+        }
+    }
+
+    &__photo-2 {
+        margin-left: auto;
+
+        img {
+            transition: 0.3s;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+        }
+    }
+
+    &__photo-4 {
+        max-width: 100%;
+
+    }
+
+    &__photo-5 {
+        max-width: 100%;
+
+    }
+
+    &__row-bot {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            transition: 0.3s;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+
+        & img:first-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    // poap-up-------------------------------------------------------------------------------------------------------------
+
+    &__poap-up.click-on-photo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 50;
+    }
+
+    &__poap-up {
+        display: none;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        cursor: pointer;
+
+      
+    }
+
+    &__photo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 52;
+
+  
+
+    }
+
+
+
+
+
+    &__poap-up2.click-on-photo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 50;
+    }
+
+    &__poap-up2 {
+        display: none;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+
+       
+    }
+
+    &__photo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 52;
+
+   
+
+    }
+
+
+
+
+    &__poap-up3.click-on-photo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 50;
+    }
+
+    &__poap-up3 {
+        display: none;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        cursor: pointer;
+
+    
+    }
+
+    &__photo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 52;
+
+   
+
+
+    }
+
+
+
+
+    &__poap-up4.click-on-photo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 50;
+    }
+
+    &__poap-up4 {
+        display: none;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        cursor: pointer;
+
+     
+    }
+
+    &__photo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 52;
+
+    
+
+
+    }
+
+
+
+
+    &__poap-up5.click-on-photo {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 20px;
+        z-index: 50;
+    }
+
+    &__poap-up5 {
+        display: none;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        cursor: default;
+    }
+        .gallery__close:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    
+
+    &__photo {
+        margin: 0 auto;
+        position: relative;
+        z-index: 52;
+
+        .gallery__close {
+            position: absolute;
+            right: 0%;
+            top: -42px;
+            font-size: 50px;
+            color: white;
+            opacity: 0.6;
+            transform: rotate(45deg);
+
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+
+        img {
+
+            max-height: 80vh;
+            min-height: 55vh;
+        }
+    }
+
+    // poap-up-------------------------------------------------------------------------------------------------------------
+}
+
+
+.find-out-more {
+
+    &__color {
+        position: relative;
+        margin: 0 auto;
+        display: table;
+        margin-bottom: 60px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__row-top {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 145%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__row-bot {
+        margin-top: 70px;
+    }
+
+    &__batton-left {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 23px 58px;
+        cursor: pointer;
+    }
+
+    &__batton-right {
+        margin-left: 90px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 23px 58px;
+        cursor: pointer;
+    }
+}
+
+
+.registration {
+
+    &__container {
+        max-width: 1110px;
+        padding: 0 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 122px;
+    }
+
+    &__left-block {}
+
+    &__top {}
+
+    &__tittle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 145%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__text {
+        margin-top: 40px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: #616161;
+    }
+
+    &__bot {
+        margin-top: 60px;
+        display: flex;
+    }
+
+    &__restaurant {}
+
+    &__text-restaurant {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 135%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__information {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: #000000;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 25px;
+        }
+    }
+
+    &__information:nth-of-type(3) {
+
+        img {
+            transform: translate(-4px);
+        }
+    }
+
+    &__office {
+        margin-left: 40px;
+    }
+
+    &__right-block {
+        margin-left: 30px;
+    }
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__name {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: black;
+        border: none;
+        padding-bottom: 12px;
+        border-bottom: 0.5px solid #D0D0D0;
+
+        &::placeholder {
+            color: #616161;
+        }
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    &__e-mail {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: black;
+        border: none;
+        padding-bottom: 12px;
+        border-bottom: 0.5px solid #D0D0D0;
+        margin-top: 25px;
+
+        &::placeholder {
+            color: #616161;
+        }
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    &__message {
+        width: 540px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 135%;
+        color: black;
+        height: 196px;
+        margin-top: 35px;
+        border: 0.5px solid #D0D0D0;
+        padding-left: 20px;
+        padding-top: 15px;
+
+        &::placeholder {
+            color: #616161;
+        }
+
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    &__botton {
+        align-self: flex-start;
+        margin-top: 55px;
+        padding: 12px 35px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #D1A954;
+        outline-style: none;
+        border: none;
+        cursor: pointer;
+
+        &:active {
+            background-color: rgb(180, 138, 48);
+        }
+    }
+}
+
+// !main
+// !-----------------------------------------------------------------------------------------------------------------
+
+
+// ?ПОДВАЛ -----------------------------------------------------------------------------------------------------------------------------------------------------
+.footer {
+
+    &__color {
+        background: #F9F7F7;
+    }
+
+    &__container {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: table;
+        padding: 0 20px;
+    }
+
+    &__top {
+        padding: 120px 20px 90px 20px;
+        text-align: center;
+        background: #F9F7F7;
+    }
+
+    &__tittle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 145%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__picture {
+        margin-top: 10px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__summer-castle {
+        margin-top: 10px;
+    }
+
+    &__middle {
+        display: flex;
+
+        img {
+            width: 16.6666%;
+            max-width: 100%;
+        }
+    }
+
+    &__bottom {
+        padding: 40px 0px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text-left {
+        margin: 0 auto 0 0;
+    }
+
+    &__text-right {
+        margin: 0 0 0 auto;
+    }
+}
+
+// ?ПОДВАЛ -----------------------------------------------------------------------------------------------------------------------------------------------------
+// ?ПОДВАЛ -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// !flex-main----------------------------------------------------------------------------------------------------------------
+
+
+@media(max-width:1280px) {
+
+    .slider {
+
+        &__container {
+            max-width: 1800px;
+            margin: 140px auto 0 auto;
+            overflow: hidden;
+            padding: 20px 10px 0px 10px;
+            background-color: white;
+        }
+
+        .item-slider {
+            position: relative;
+
+            &__container-down-color {
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                width: 100%;
+                background: rgba(209, 169, 84, 0.9);
+                padding: 5px 5px;
+                box-sizing: border-box;
+            }
+
+            &__tittle {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 37px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-top: 5px;
+            }
+
+            &__text {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 135%;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 0px;
+                margin-bottom: 3px;
+            }
+        }
+
+        .switch {
+
+            margin: 40px auto 60px auto;
+
+            &__button-prev {
+                font-size: 24px;
+            }
+
+            &__button-next {
+                font-size: 24px;
+            }
+        }
+
+    }
+
+    .about-restaurant {
+
+        &__heading_top {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 145%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #222222;
+        }
+
+        &__heading {
+            font-size: 14px;
+        }
+
+        &__video {
+            border: solid;
+            margin: 0 auto;
+            border: 10px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 30px rgba(126, 126, 126, 0.25);
+            display: table;
+
+            video {
+                max-width: 100%;
+                height: 400px;
+            }
+        }
+
+        &__color {
+            background-color: #E5E5E5;
+            padding-top: 200px;
+            margin-top: 290px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .gallery {
+        &__tittle {
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+        }
+
+        &__row-top {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__photo-1 {
+            margin-left: 0;
+            margin-top: 15px;
+
+            img {
+                max-height: 50vh;
+            }
+        }
+
+        &__photo-2 {
+            margin-left: 0;
+            margin-top: 15px;
+
+            img {
+                max-height: 50vh;
+            }
+        }
+
+        &__photo-3 {
+            max-height: 50vh;
+
+
+        }
+
+        &__photo-4 {
+            max-height: 50vh;
+        }
+
+        &__photo-5 {
+            max-height: 50vh;
+        }
+
+        &__row-bot {
+            margin-top: 15px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        &__column {
+            display: flex;
+            flex-direction: row;
+            margin-left: 0px;
+            align-items: center;
+            margin-top: 20px;
+
+
+
+
+            & img:first-child {
+                margin-bottom: 0px;
+                margin-right: 15px;
+            }
+        }
+
+        &__heading {
+            font-size: 20px;
+        }
+
+        &__container {
+            padding: 60px 20px;
+            max-width: 1110px;
+            margin: 0 auto;
+        }
+    }
+
+
+    .registration {
+
+        &__container {
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        &__right-block {
+            margin-left: 0px;
+            margin-top: 50px;
+        }
+    }
+
+
+    .find-out-more {
+        &__row-top {
+            font-size: 20px;
+        }
+
+        &__row-bot {
+            margin-top: 20px;
+        }
+
+        &__batton-left {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            padding: 12px 29px;
+            cursor: pointer;
+        }
+
+        &__batton-right {
+            margin-left: 90px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            padding: 12px 29px;
+            cursor: pointer;
+        }
+    }
+
+
+    .registration {
+        &__tittle {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+@media(max-width:966px) {
+
+    .gallery {
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            align-items: center;
+
+            & img:last-child {
+                margin-top: 15px;
+            }
+
+            & img:first-child {
+                margin-bottom: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width:878px) {
+
+    .slider {
+
+        &__container {
+            margin: 100px auto 0 auto;
+        }
+    }
+}
+
+@media(max-width:835px) {
+
+    .slider {
+
+        &__container {
+            margin: 100px auto 0 auto;
+        }
+
+        .item-slider {
+
+            &__tittle {
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+            &__text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .about-restaurant {
+
+        &__video {
+
+            video {
+                max-width: 100%;
+                height: 300px;
+            }
+        }
+
+        &__color {
+            padding-top: 110px;
+        }
+
+        &__container-2 {
+            max-width: 1110px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        &__descr-1 {
+            text-align: center;
+
+            br {
+                display: none;
+            }
+        }
+
+        &__descr-2 {
+            margin-left: 0px;
+            margin-top: 45px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+
+    .slider {
+
+        &__container {
+            max-width: 1800px;
+            margin: 80px auto 0 auto;
+            overflow: hidden;
+            padding: 20px 0px 0px 00px;
+            background-color: white;
+        }
+
+        &__column:hover {
+            transform: scale(1);
+        }
+
+        .item-slider {
+
+            &__tittle {
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+            &__text {
+                display: none;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            &__container-down-color {
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                width: 100%;
+                background: rgba(209, 169, 84, 0.9);
+                padding: 10px 10px;
+                box-sizing: border-box;
+            }
+
+            &__border {
+                border: 0px;
+                ;
+            }
+        }
+
+        .switch {
+
+            position: relative;
+
+            .swiper-pagination {
+
+                .swiper-pagination-bullet-active {
+                    background-color: black;
+                }
+
+                span {
+                    height: 3px;
+                    width: 10px;
+                    background-color: #E5E5E5;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .about-restaurant {
+
+        &__video {
+
+            video {
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+
+        &__color {
+            padding-top: 80px;
+        }
+    }
+}
+
+
+@media(max-width:622px) {
+
+    .slider {
+
+        &__container {
+            margin: 50px auto 0 auto;
+        }
+
+        .item-slider {
+
+            &__tittle {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .registration {
+        &__message {
+            width: 440px;
+        }
+    }
+
+    .find-out-more {
+        &__batton-left {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            padding: 6px 14px;
+            cursor: pointer;
+        }
+
+        &__batton-right {
+            margin-left: 50px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            padding: 6px 14px;
+            cursor: pointer;
+        }
+    }
+
+
+
+}
+
+@media(max-width:532px) {
+
+    .slider {
+
+        .item-slider {
+            &__container-down-color {
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                width: 100%;
+                background: rgba(209, 169, 84, 0.9);
+                padding: 0px 0px;
+                box-sizing: border-box;
+                height: 35px;
+            }
+        }
+    }
+
+    .registration {
+        &__bot {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__office {
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+
+        &__message {
+            width: 340px;
+        }
+    }
+
+    .find-out-more {
+
+        &__batton-left {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-transform: initial;
+            color: #000000;
+            padding: 2px 4px;
+            cursor: pointer;
+        }
+
+        &__batton-right {
+            margin-left: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: initial;
+            color: #000000;
+            padding: 2px 4px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:500px) {
+
+    .about-restaurant {
+
+        &__row-1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__row-2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__square2 {
+            margin-top: 25px;
+
+        }
+    }
+}
+
+@media(max-width:446px) {
+
+    .slider {
+
+        .item-slider {
+
+            &__tittle {
+                word-wrap: break-word;
+                text-transform: initial;
+            }
+        }
+    }
+}
+
+@media(max-width:420px) {
+
+    .registration {
+
+        &__message {
+            width: 280px;
+        }
+    }
+
+    .find-out-more {
+
+        &__container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__row-top {
+            font-size: 14px;
+            line-height: 145%;
+        }
+
+        &__row-bot {
+            margin-top: 0px;
+        }
+    }
+}
+
+
+@media(max-width:360px) {
+
+    .registration {
+
+        &__message {
+            width: 240px;
+        }
+    }
+}
+
+
+// height-------------------------------------------------------------
+@media(max-height:823px) {
+    .gallery {
+
+        &__photo {
+
+
+            .gallery__close {}
+
+            img {
+
+                max-height: 80vh;
+                min-height: 0vh;
+            }
+        }
+    }
+}
+
+// height-------------------------------------------------------------
+// height-------------------------------------------------------------
+
+// !flex-main----------------------------------------------------------------------------------------------------------------
+// !flex-main----------------------------------------------------------------------------------------------------------------
+
+// ?flex-header-------------------------------------------
+
+@media(max-width:1280px) {
+
+    .header {
+        &__link {
+            font-size: 12px;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+
+
+    }
+}
+
+@media(max-width:966px) {
+    .header {
+
+        &__logo {
+            margin-left: 0px;
+            margin-right: 20px;
+
+            img {
+                max-width: 100%;
+                height: 50px;
+            }
+        }
+
+        &__container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            transition: 0.6s;
+        }
+
+    }
+}
+
+@media(max-width:878px) {
+
+    .header {
+        &__link {
+
+            &:not(:first-child) {
+                margin-left: 9px;
+            }
+
+            &:hover {
+                color: #D1A954;
+                border: 1px solid rgba(209, 169, 84, 0.9);
+                padding: 1px 3px;
+            }
+        }
+
+        &__logo {
+
+            img {
+                max-width: 100%;
+                height: 30px;
+            }
+        }
+
+        &__active {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #D1A954;
+            border: 1px solid rgba(209, 169, 84, 0.9);
+            padding: 1px 3px;
+        }
+    }
+}
+
+
+@media(max-width:767px) {
+
+    .header {
+
+        &__container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0px 20px;
+            display: flex;
+            align-items: center;
+            transition: 0.6s;
+            height: 40px;
+        }
+
+
+
+
+        &__container-link {
+            display: none;
+        }
+
+        // menu-burger------------------
+
+        &__burger-menu {
+            display: block;
+            margin-left: auto;
+            margin-right: 40px;
+            cursor: pointer;
+        }
+
+        &__stick-top {
+            width: 20px;
+            height: 2px;
+            background-color: gold;
+            transition: 0.3s;
+        }
+
+        &__stick-center {
+            width: 20px;
+            height: 2px;
+            background-color: gold;
+            margin-top: 3px;
+            transition: 0.3s;
+        }
+
+        &__stick-bottom {
+            width: 20px;
+            height: 2px;
+            background-color: gold;
+            margin-top: 3px;
+            transition: 0.3s;
+        }
+
+        &__container-burger-menu.move-sticks {
+            .header__stick-top {
+                width: 20px;
+                height: 2px;
+                background-color: gold;
+                transform: rotate(-45deg) translate(0px, 7px);
+            }
+
+            .header__stick-center {
+                width: 20px;
+                height: 2px;
+                background-color: gold;
+                margin-top: 3px;
+                opacity: 0;
+            }
+
+            .header__stick-bottom {
+                width: 20px;
+                height: 2px;
+                background-color: gold;
+                margin-top: 3px;
+                transform: rotate(45deg) translate(0px, -7px);
+            }
+        }
+
+
+
+        &__open-menu-buger {
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background-color: rgb(251, 226, 81);
+            transition: 0.3s;
+            border-right: 10px solid gold;
+            box-sizing: border-box;
+        }
+
+        &__open-menu-buger.opened {
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            background-color: rgb(251, 226, 81);
+            z-index: 0;
+            border-right: 10px solid gold;
+            box-sizing: border-box;
+
+        }
+
+        &__container-open-menu {
+            display: table;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+
+        }
+
+        &__text-menu {
+            font-size: 30px;
+        }
+
+        &__link-burger {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+            transition: 0.3s;
+            transition-property: border, padding;
+            display: block;
+            margin-top: 60px;
+        }
+
+        // menu-burger------------------
+    }
+}
+
+// ?flex-header-------------------------------------------
+// ?flex-header-------------------------------------------
+
+
+
+// ?flex-footer--------------------------------------------
+
+@media(max-width:1280px) {
+    .footer {
+
+        &__tittle {
+            font-size: 20px;
+        }
+
+        &__top {
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+            background: #F9F7F7;
+        }
+    }
+}
+
+@media(max-width:668px) {
+
+    .footer {
+
+        &__bottom {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text-left {
+            margin: 0 auto;
+        }
+
+        &__text-right {
+            margin: 20px auto 0px auto;
+        }
+    }
+}
+
+// ?flex-footer-----------------------------------------
+// ?flex-footer-----------------------------------------

@@ -1,0 +1,2178 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  z-index: 49;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid gold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.header__logo {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__container-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 auto;
+}
+
+.header__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-property: border, padding;
+  transition-property: border, padding;
+}
+
+.header__link:hover {
+  color: #D1A954;
+  border: 1px solid rgba(209, 169, 84, 0.9);
+  padding: 7px 9px;
+}
+
+.header__link:not(:first-child) {
+  margin-left: 30px;
+}
+
+.header__active {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #D1A954;
+  border: 1px solid rgba(209, 169, 84, 0.9);
+  padding: 7px 9px;
+}
+
+.header__gold {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #D1A954;
+}
+
+.header__burger-menu {
+  display: none;
+}
+
+.header__open-menu-buger {
+  display: none;
+}
+
+.header.header-scroll .header__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.header.header-scroll .header__logo {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.header.header-scroll .header__logo img {
+  max-width: 100%;
+  height: 30px;
+}
+
+.navigation__container {
+  margin: 150px auto 0 auto;
+  max-width: 1110px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__main {
+  color: #b88c32;
+  text-decoration: none;
+  font-style: italic;
+  font-size: .8em;
+}
+
+.navigation__main:hover {
+  text-decoration: underline;
+}
+
+.navigation__arrov {
+  margin: 0 10px;
+  cursor: default;
+  color: #b88c32;
+}
+
+.navigation__active {
+  color: #b88c32;
+  text-decoration: none;
+  font-style: italic;
+  font-size: .8em;
+  cursor: default;
+}
+
+.organization__container {
+  max-width: 1110px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.organization__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.organization__left-line {
+  width: 15%;
+  height: 1px;
+  margin-right: 30px;
+  background: #b88c32;
+}
+
+.organization__h1 {
+  font-size: 2.05em;
+  line-height: 2.8em;
+  font-weight: 400;
+  letter-spacing: .025em;
+}
+
+.organization__right-line {
+  width: 15%;
+  height: 1px;
+  margin-left: 30px;
+  background: #b88c32;
+}
+
+.organization__square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #b88c32;
+  padding: 4px 4px 0px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.organization__picture {
+  max-width: 100%;
+}
+
+.organization__text {
+  margin-left: 20px;
+}
+
+.organization__bold-text {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: .025em;
+}
+
+.organization__normal-text {
+  line-height: 1.6em;
+  font-size: 1em;
+  color: #666;
+  margin-top: 12px;
+}
+
+.organization__phone {
+  margin-top: 40px;
+  background-color: #faf4eb;
+  font-weight: 700;
+  color: #444;
+  padding: 25px 0 25px 25px;
+  line-height: 1.6em;
+}
+
+.number-1__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 0 20px;
+}
+
+.number-1__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-1__left-line {
+  width: 32%;
+  height: 1px;
+  margin-right: 30px;
+  background: #b88c32;
+}
+
+.number-1__h1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+  border: 1px solid #b88c32;
+}
+
+.number-1__h1::after {
+  content: '1';
+  background-color: #b88c32;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.number-1__right-line {
+  width: 32%;
+  height: 1px;
+  margin-left: 30px;
+  background: #b88c32;
+}
+
+.number-1__top-text {
+  margin-top: 30px;
+}
+
+.number-1__bold-text {
+  font-size: 1.75em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .025em;
+  color: #131e26;
+}
+
+.number-1__norm-text {
+  margin-top: 30px;
+  line-height: 1.6em;
+  font-size: 1em;
+  color: #666;
+}
+
+.number-1__bot-text {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.number-1__column {
+  text-align: center;
+}
+
+.number-1 .marg-left {
+  margin-left: 40px;
+}
+
+.number-1__image {
+  margin-bottom: 15px;
+}
+
+.number-1__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.number-1__description {
+  font-size: 14px;
+  line-height: 1.6em;
+  font-size: 14px;
+}
+
+.number-2 img {
+  max-width: 100%;
+}
+
+.number-2__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 0 20px;
+}
+
+.number-2__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-2__left-line {
+  width: 32%;
+  height: 1px;
+  margin-right: 30px;
+  background: #b88c32;
+}
+
+.number-2__h1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+  border: 1px solid #b88c32;
+}
+
+.number-2__h1::after {
+  content: '2';
+  background-color: #b88c32;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.number-2__right-line {
+  width: 32%;
+  height: 1px;
+  margin-left: 30px;
+  background: #b88c32;
+}
+
+.number-2__top-text {
+  margin-top: 30px;
+}
+
+.number-2__bold-text {
+  font-size: 1.75em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .025em;
+  color: #131e26;
+}
+
+.number-2__top-row {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.number-2__furniture {
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-2__furniture:hover .number-2__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-2__curtain {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #b88c32;
+  width: 100%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-2__curtain::after {
+  content: "Смотреть фотогалерею";
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: solid 2px;
+  text-align: center;
+}
+
+.number-2__dish {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-2__dish:hover .number-2__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-2__small {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-2__small:hover .number-2__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-2__text {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+}
+
+.number-2__picture {
+  margin-top: 20px;
+  margin-bottom: -4px;
+}
+
+.number-2__bot-row {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture,
+.number-2 .number-2__gallery-pop-up-dish,
+.number-2 .number-2__gallery-pop-up-small,
+.number-2 .number-2__gallery-pop-up-transfer,
+.number-2 .number-2__gallery-pop-up-floristik,
+.number-2 .number-2__gallery-pop-up-pro-serve {
+  display: none;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active,
+.number-2 .number-2__gallery-pop-up-dish.active,
+.number-2 .number-2__gallery-pop-up-small.active,
+.number-2 .number-2__gallery-pop-up-transfer.active,
+.number-2 .number-2__gallery-pop-up-floristik.active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  text-align: center;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active img,
+.number-2 .number-2__gallery-pop-up-dish.active img,
+.number-2 .number-2__gallery-pop-up-small.active img,
+.number-2 .number-2__gallery-pop-up-transfer.active img,
+.number-2 .number-2__gallery-pop-up-floristik.active img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active img {
+  max-width: 100%;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__backgroundt,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__backgroundt,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__backgroundt,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__backgroundt,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__backgroundt,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__background,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__backgroundq,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__backgroundw,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__backgrounde,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__backgroundr,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__backgroundt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__slider,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__slider,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__slider,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__slider,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__slider,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__slider {
+  width: 60%;
+  background-color: #412f0bd0;
+  border: 2px solid #fdb720;
+  outline: 1px solid #fdb720;
+  outline-offset: -5px;
+  padding: 7px;
+  position: relative;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closet,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closet,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closet,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closet,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closet,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__close,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closeq,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closew,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closee,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closer,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closet {
+  display: block;
+  font-size: 66px;
+  color: white;
+  position: absolute;
+  top: -4%;
+  left: 102%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-furniture.active .number-2__closet:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-dish.active .number-2__closet:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-small.active .number-2__closet:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-transfer.active .number-2__closet:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-floristik.active .number-2__closet:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__close:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closeq:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closew:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closee:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closer:hover,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .number-2__closet:hover {
+  opacity: 1;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-furniture.active .swiper-container.gallery-topt img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-dish.active .swiper-container.gallery-topt img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-small.active .swiper-container.gallery-topt img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-transfer.active .swiper-container.gallery-topt img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-floristik.active .swiper-container.gallery-topt img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-top img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-topq img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-topw img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-tope img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-topr img,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .swiper-container.gallery-topt img {
+  margin-bottom: -4px;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbst .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbst .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbst .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbst .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbst .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbs .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsq .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsw .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbse .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsr .swiper-wrapper,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbst .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbst .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbst .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbst .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbst .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbst .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbs .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsq .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsw .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbse .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsr .swiper-slide,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbst .swiper-slide {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-furniture.active .gallery-thumbst .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-dish.active .gallery-thumbst .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-small.active .gallery-thumbst .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-transfer.active .gallery-thumbst .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-floristik.active .gallery-thumbst .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbs .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsq .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsw .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbse .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbsr .swiper-slide-thumb-active,
+.number-2 .number-2__gallery-pop-up-pro-serve.active .gallery-thumbst .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.number-3 img {
+  max-width: 100%;
+}
+
+.number-3__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  padding: 0 20px;
+}
+
+.number-3__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-3__left-line {
+  width: 32%;
+  height: 1px;
+  margin-right: 30px;
+  background: #b88c32;
+}
+
+.number-3__h1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+  border: 1px solid #b88c32;
+}
+
+.number-3__h1::after {
+  content: '3';
+  background-color: #b88c32;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.number-3__right-line {
+  width: 32%;
+  height: 1px;
+  margin-left: 30px;
+  background: #b88c32;
+}
+
+.number-3__top-text {
+  margin-top: 30px;
+}
+
+.number-3__bold-text {
+  font-size: 1.75em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .025em;
+  color: #131e26;
+}
+
+.number-3__top-row {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.number-3__furniture {
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-3__furniture:hover .number-3__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-3__curtain {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #b88c32;
+  width: 100%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-3__curtain::after {
+  content: "Смотреть фотогалерею";
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: solid 2px;
+  text-align: center;
+}
+
+.number-3__dish {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-3__dish:hover .number-3__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-3__small {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  border: solid 2px #b88c32;
+}
+
+.number-3__small:hover .number-3__curtain {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.number-3__text {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+}
+
+.number-3__picture {
+  margin-top: 20px;
+  margin-bottom: -4px;
+}
+
+.number-3__bot-row {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder,
+.number-3 .number-3__gallery-pop-up-const-castle,
+.number-3 .number-3__gallery-pop-up-marble-castle,
+.number-3 .number-3__gallery-pop-up-arena,
+.number-3 .number-3__gallery-pop-up-square,
+.number-3 .number-3__gallery-pop-up-musium {
+  display: none;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active,
+.number-3 .number-3__gallery-pop-up-const-castle.active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active,
+.number-3 .number-3__gallery-pop-up-arena.active,
+.number-3 .number-3__gallery-pop-up-square.active,
+.number-3 .number-3__gallery-pop-up-musium.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  text-align: center;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active img,
+.number-3 .number-3__gallery-pop-up-const-castle.active img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active img,
+.number-3 .number-3__gallery-pop-up-arena.active img,
+.number-3 .number-3__gallery-pop-up-square.active img,
+.number-3 .number-3__gallery-pop-up-musium.active img {
+  max-width: 100%;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__backgroundh,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__backgroundh,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__backgroundh,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__backgroundh,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__backgroundh,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgrounda,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgrounds,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgroundd,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgroundf,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgroundg,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__backgroundh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__slider,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__slider,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__slider,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__slider,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__slider,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__slider {
+  width: 60%;
+  background-color: #412f0bd0;
+  border: 2px solid #fdb720;
+  outline: 1px solid #fdb720;
+  outline-offset: -5px;
+  padding: 7px;
+  position: relative;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closeh,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closeh,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closeh,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closeh,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closeh,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closea,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closes,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closed,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closef,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closeg,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closeh {
+  display: block;
+  font-size: 66px;
+  color: white;
+  position: absolute;
+  top: -4%;
+  left: 102%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-belveder.active .number-3__closeh:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-const-castle.active .number-3__closeh:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .number-3__closeh:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-arena.active .number-3__closeh:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-square.active .number-3__closeh:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closea:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closes:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closed:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closef:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closeg:hover,
+.number-3 .number-3__gallery-pop-up-musium.active .number-3__closeh:hover {
+  opacity: 1;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-belveder.active .swiper-container.gallery-toph img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-const-castle.active .swiper-container.gallery-toph img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .swiper-container.gallery-toph img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-arena.active .swiper-container.gallery-toph img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-square.active .swiper-container.gallery-toph img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-topa img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-tops img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-topd img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-topf img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-topg img,
+.number-3 .number-3__gallery-pop-up-musium.active .swiper-container.gallery-toph img {
+  margin-bottom: -4px;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsh .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsh .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsh .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsh .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsh .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsa .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbss .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsd .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsf .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsg .swiper-wrapper,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsh .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsh .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsh .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsh .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsh .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsh .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsa .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbss .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsd .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsf .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsg .swiper-slide,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsh .swiper-slide {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-belveder.active .gallery-thumbsh .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-const-castle.active .gallery-thumbsh .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-marble-castle.active .gallery-thumbsh .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-arena.active .gallery-thumbsh .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-square.active .gallery-thumbsh .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsa .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbss .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsd .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsf .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsg .swiper-slide-thumb-active,
+.number-3 .number-3__gallery-pop-up-musium.active .gallery-thumbsh .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.number-4 br {
+  display: none;
+}
+
+.number-4 img {
+  max-width: 100%;
+}
+
+.number-4__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 0 20px;
+}
+
+.number-4__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.number-4__left-line {
+  width: 32%;
+  height: 1px;
+  margin-right: 30px;
+  background: #b88c32;
+}
+
+.number-4__h1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+  border: 1px solid #b88c32;
+}
+
+.number-4__h1::after {
+  content: '4';
+  background-color: #b88c32;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.number-4__right-line {
+  width: 32%;
+  height: 1px;
+  margin-left: 30px;
+  background: #b88c32;
+}
+
+.number-4__information-price-outside-contaner {
+  border: 3px solid #b88c32;
+  padding: 3px;
+  margin-top: 30px;
+}
+
+.number-4__information-price-inside-contaner {
+  border: 1px solid #b88c32;
+  padding: 15px;
+}
+
+.number-4__title-information {
+  font-weight: 600;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #b88c32;
+  color: #333;
+  font-size: 1.3em;
+  letter-spacing: .05em;
+  line-height: 2.7em;
+}
+
+.number-4__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.number-4__text i {
+  font-weight: normal;
+}
+
+.number-4__name {
+  font-weight: bold;
+  line-height: 2.5em;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.number-4__price {
+  font-weight: bold;
+  line-height: 2.5em;
+  font-size: 1em;
+}
+
+.footer__color {
+  background: #F9F7F7;
+}
+
+.footer__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: table;
+  padding: 0 20px;
+}
+
+.footer__top {
+  padding: 120px 20px 90px 20px;
+  text-align: center;
+  background: #F9F7F7;
+}
+
+.footer__tittle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 145%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.footer__picture {
+  margin-top: 10px;
+}
+
+.footer__picture img {
+  max-width: 100%;
+}
+
+.footer__summer-castle {
+  margin-top: 10px;
+}
+
+.footer__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__middle img {
+  width: 16.6666%;
+  max-width: 100%;
+}
+
+.footer__bottom {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__text-left {
+  margin: 0 auto 0 0;
+}
+
+.footer__text-right {
+  margin: 0 0 0 auto;
+}
+
+@media (max-width: 952px) {
+  .number-2__text {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+  }
+  .number-3__text {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 884px) {
+  .organization img {
+    max-width: 100%;
+  }
+  .organization__square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: 3px solid #b88c32;
+    padding: 4px 4px 0px 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .organization__picture {
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 20px;
+  }
+  .organization__text {
+    margin-left: 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .organization__bold-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 878px) {
+  .navigation__container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 776px) {
+  .number-1__bot-text {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .number-1__column {
+    text-align: center;
+  }
+  .number-1__column:nth-of-type(n+2):nth-of-type(-n+4) {
+    margin-top: 40px;
+  }
+  .number-1 .marg-left {
+    margin-left: 0px;
+  }
+  .number-4 br {
+    display: block;
+  }
+  .number-4__title-information {
+    font-weight: 600;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #b88c32;
+    color: #333;
+    font-size: 1.1em;
+    letter-spacing: .05em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  .number-4__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .number-4__name {
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 1em;
+    margin-right: 20px;
+  }
+  .number-4__price {
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 767px) {
+  .organization__h1 {
+    font-size: 24px;
+    line-height: 2.8em;
+    font-weight: 400;
+    letter-spacing: .025em;
+  }
+  .number-1__container {
+    margin-bottom: 70px;
+  }
+  .number-1__bold-text {
+    font-size: 24px;
+  }
+  .number-2__container {
+    margin-bottom: 70px;
+  }
+  .number-2__bold-text {
+    font-size: 24px;
+  }
+  .number-2 .swiper-button-next.swiper-button-white,
+  .number-2 .swiper-button-prev.swiper-button-white {
+    display: none;
+  }
+  .number-3__container {
+    margin-bottom: 70px;
+  }
+  .number-3__bold-text {
+    font-size: 24px;
+  }
+  .number-3 .swiper-button-next.swiper-button-white,
+  .number-3 .swiper-button-prev.swiper-button-white {
+    display: none;
+  }
+}
+
+@media (max-width: 622px) {
+  .navigation__container {
+    margin-top: 70px;
+  }
+  .organization__bold-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 490px) {
+  .number-2__top-row {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .number-2__dish {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .number-2__small {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .number-2__text {
+    margin-top: 0px;
+  }
+  .number-2__picture {
+    margin-top: 0px;
+  }
+  .number-2__bot-row {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .number-3__top-row {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .number-3__dish {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .number-3__small {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .number-3__text {
+    margin-top: 0px;
+  }
+  .number-3__picture {
+    margin-top: 0px;
+  }
+  .number-3__bot-row {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header__link {
+    font-size: 12px;
+  }
+  .header__link:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 966px) {
+  .header__logo {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  .header__logo img {
+    max-width: 100%;
+    height: 50px;
+  }
+  .header__container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+}
+
+@media (max-width: 878px) {
+  .header__link:not(:first-child) {
+    margin-left: 9px;
+  }
+  .header__link:hover {
+    color: #D1A954;
+    border: 1px solid rgba(209, 169, 84, 0.9);
+    padding: 1px 3px;
+  }
+  .header__logo img {
+    max-width: 100%;
+    height: 30px;
+  }
+  .header__active {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #D1A954;
+    border: 1px solid rgba(209, 169, 84, 0.9);
+    padding: 1px 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    height: 40px;
+  }
+  .header__container-link {
+    display: none;
+  }
+  .header__burger-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .header__stick-top {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__stick-center {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    margin-top: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__stick-bottom {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    margin-top: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__container-burger-menu.move-sticks .header__stick-top {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    -webkit-transform: rotate(-45deg) translate(0px, 7px);
+            transform: rotate(-45deg) translate(0px, 7px);
+  }
+  .header__container-burger-menu.move-sticks .header__stick-center {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    margin-top: 3px;
+    opacity: 0;
+  }
+  .header__container-burger-menu.move-sticks .header__stick-bottom {
+    width: 20px;
+    height: 2px;
+    background-color: gold;
+    margin-top: 3px;
+    -webkit-transform: rotate(45deg) translate(0px, -7px);
+            transform: rotate(45deg) translate(0px, -7px);
+  }
+  .header__open-menu-buger {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background-color: #fbe251;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-right: 10px solid gold;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header__open-menu-buger.opened {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #fbe251;
+    z-index: 0;
+    border-right: 10px solid gold;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header__container-open-menu {
+    display: table;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header__text-menu {
+    font-size: 30px;
+  }
+  .header__link-burger {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transition-property: border, padding;
+    transition-property: border, padding;
+    display: block;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__tittle {
+    font-size: 20px;
+  }
+  .footer__top {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    background: #F9F7F7;
+  }
+}
+
+@media (max-width: 668px) {
+  .footer__bottom {
+    padding: 40px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__text-left {
+    margin: 0 auto;
+  }
+  .footer__text-right {
+    margin: 20px auto 0px auto;
+  }
+}
+/*# sourceMappingURL=style-catering.css.map */
